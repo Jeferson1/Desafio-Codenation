@@ -39,7 +39,7 @@ function getFile(){
             const decipheredStr =  deciphered.join('')
             console.log(decipheredStr)
                         
-            // =====================================(SHA1)=========================================
+            // ===================================== INICIO do (SHA1)=========================================
 
             function SHA1 (msg) {
 
@@ -349,11 +349,15 @@ function getFile(){
 
             }
 
-            // =====================================(SHA1)=========================================
-       
+            // ===================================== FIM do (SHA1)=========================================
+    
+            // Atualizando o JSON com os campos descriptografado e usando SHA1
+
             obj.decifrado = decipheredStr
             obj.resumo_criptografico = SHA1(decipheredStr) // 'be94bebc530f2b7f405332b49bec5e8abb62e8d1'
             console.log(obj)
+
+            // Função para gerar o arquivo answer.json e fazer o download
 
             function saveFile(text, filename){
             
@@ -372,6 +376,9 @@ function getFile(){
             console.warn(error)
         })
 }
+
+ 
+//  Função que envia o arquivo answer.json a partir do campo input do HTML
 
 function sendFile(){
 
