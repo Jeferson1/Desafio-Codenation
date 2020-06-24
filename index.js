@@ -1,6 +1,6 @@
 function getFile(){
 
-    const token = 'b055074765251dbd34c098e260819b2ce77c8754'
+    const token = 
 
     const letters = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w','x', 'y', 'z']
 
@@ -382,7 +382,7 @@ function getFile(){
 
 function sendFile(){
 
-    const token = 'b055074765251dbd34c098e260819b2ce77c8754'
+    const token = 
 
     const inputElement = document.querySelector('input').files
     console.log(inputElement)
